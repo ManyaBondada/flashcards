@@ -1,0 +1,12 @@
+.card{
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+  }
+
+.card:hover{
+    box-shadow: 0 0 10px lightblue;
+}

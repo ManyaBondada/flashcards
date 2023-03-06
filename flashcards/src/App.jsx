@@ -1,32 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.css';
+import Card from './components/Card';
+import {useState} from "react";
+const App = () => {
 
-function App() {
-  const [count, setCount] = useState(0)
+  
+  const data = [
+    { country: 'Kenya', capital: 'Nairobi'},
+    { country: 'Japan', capital: 'Tokyo'},
+    { country: 'Sweden', capital: 'Stockholm'},
+    { country: 'Syria', capital: 'Damascus'},
+    { country: 'Nepal', capital: 'Kathmandu'},
+    { country: 'Jamaica', capital: 'Kingston'},
+    { country: 'Honduras', capital: 'Tegucigalpa'},
+    { country: 'Indonesia', capital: 'Jakarta'},
+    { country: 'Bulgaria', capital: 'Sofia'},
+    { country: 'Croatia', capital: 'Zagreb'},
+  ]
+
+
+  const [flashcard, setFlashcard] = useState(data[0].country);
+
+   function handleClick() {
+    setFlashcard(data[0].capital);
+  };
+
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="heading">
+        <h2> Countries and Capitals </h2>
+          <div>
+            <h4> Test your knowledge on countries and their capitals </h4>
+              <div>
+                <h5> Card Count: 10 </h5>
+              </div>
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Card onClick={handleClick} front={flashcard}/>
+      
     </div>
   )
 }
