@@ -28,7 +28,8 @@ const App = () => {
   }
 
   function handleNext(){
-    setFlashcard(data[min + Math.random() * (max - min)]);
+    let rand = min + Math.random() * (max - min)
+    setFlashcard(data[1]);
     setIsFront(true);
   }
 
@@ -48,7 +49,7 @@ const App = () => {
     
       <Card onclick={handleFlip} front={flashcard.country} back={flashcard.capital} isFlip={isFront}/>
       <br></br>
-      <button onClick={handleNext} className="next">	➜ </button>
+      <button onClick={handleNext} className="next"> ➜ </button>
       
 
     </div>
