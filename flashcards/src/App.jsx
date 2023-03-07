@@ -3,6 +3,8 @@ import Card from './components/Card';
 import {useState} from "react";
 const App = () => {
 
+  const min = 0;
+  const max = 9;
   
   const data = [
     { country: 'Kenya', capital: 'Nairobi'},
@@ -18,15 +20,21 @@ const App = () => {
   ]
 
 
-  const [flashcard, setFlashcard] = useState(data[0].country);
+  const [flashcard, setFlashcard] = useState(data[0]);
+  const [isFront, setIsFront] = useState(true);
 
-   function handleClick() {
-    setFlashcard(data[0].capital);
-  };
+  function handleFlip(){
+    setIsFront(false);
+  }
 
+  function handleNext(){
+    setFlashcard(data[min + Math.random() * (max - min)]);
+    setIsFront(true);
+  }
 
   return (
     <div className="App">
+
       <div className="heading">
         <h2> Countries and Capitals </h2>
           <div>
@@ -37,8 +45,12 @@ const App = () => {
           </div>
       </div>
 
-      <Card onClick={handleClick} front={flashcard}/>
+    
+      <Card onclick={handleFlip} front={flashcard.country} back={flashcard.capital} isFlip={isFront}/>
+      <br></br>
+      <button onClick={handleNext} className="next">	➜ </button>
       
+
     </div>
   )
 }
