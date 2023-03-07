@@ -27,9 +27,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
-
-<img src='https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view' />
+Here's a walkthrough of implemented required features: https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view
 
 GIF created with LICEcap
 
