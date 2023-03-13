@@ -19,10 +19,25 @@ const App = () => {
 
 
   const [flashcard, setFlashcard] = useState(data[0]);
+  const [index, setIndex] = useState(0);
 
   function handleNext(){
-    let rand = Math.floor(Math.random() * data.length);
-    setFlashcard(data[rand]);
+    let newIndex = index + 1;
+    if(newIndex >= 10){
+      newIndex = 0;
+    }
+    setIndex(newIndex);
+    setFlashcard(data[newIndex]);
+  }
+
+  function handlePrev(){
+    let newIndex = index - 1;
+    if (newIndex <= -1){
+      newIndex = 9;
+    }
+    setIndex(newIndex);
+    setFlashcard(data[newIndex]);
+
   }
 
   return (
@@ -40,8 +55,9 @@ const App = () => {
 
 
       <Card front={flashcard.country} back={flashcard.capital}/>
-      <br></br>
-      <button onClick={handleNext} className="next"> ➜ </button>
+      <button onClick={handlePrev} className="bttn"> ← </button>
+      <button onClick={handleNext} className="bttn"> → </button>
+      
       
 
     </div>
