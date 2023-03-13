@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './components/Card';
 import {useState} from "react";
+
 const App = () => {
   
   const data = [
@@ -18,17 +19,10 @@ const App = () => {
 
 
   const [flashcard, setFlashcard] = useState(data[0]);
-  const [faceCount, setFaceCount] = useState(0);
-
-  function handleFlip(){
-    faceCount++;
-    setFaceCount(faceCount);
-  }
 
   function handleNext(){
     let rand = Math.floor(Math.random() * data.length);
     setFlashcard(data[rand]);
-    setFaceCount(0);
   }
 
   return (
@@ -44,8 +38,8 @@ const App = () => {
           </div>
       </div>
 
-    
-      <Card onClick={handleFlip} front={flashcard.country} back={flashcard.capital} count={faceCount}/>
+
+      <Card front={flashcard.country} back={flashcard.capital}/>
       <br></br>
       <button onClick={handleNext} className="next"> ➜ </button>
       

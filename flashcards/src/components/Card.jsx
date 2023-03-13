@@ -1,15 +1,20 @@
-import React from "react";
+import {useState} from "react";
 import './Card.css';
 
 const Card = (props) => {
+    const [isFront, setIsFront] = useState(true);
+
+    function handleFlip(){
+      let newIsFront = !isFront;
+      setIsFront(newIsFront);
+    }
+
     return(
-    <>
-    {props.count % 2 == 1 ?  <div className="card"> <p className="back">  {props.back} </p> </div>
-                   :  <div className="card"> <p className="front"> {props.front}</p> </div>
+    <div className="card" onClick={handleFlip}>
+    {isFront == true ? <p className="front">  {props.front} </p>
+                   : <p className="back"> {props.back}</p> 
     } 
-    </>
-
-
+    </div>
     )
 }
 
