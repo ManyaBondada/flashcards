@@ -1,8 +1,8 @@
 # Web Development Project 3 - *Manya Bondada*
 
-Submitted by: **Your Name Here**
+Submitted by: **Manya Bondada**
 
-This web app: **Tests you on your knowledge on countries and their capital**
+This web app: **Tests you on your knowledge on countries and their capitals**
 
 Time spent: **9** hours spent in total
 
@@ -19,7 +19,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif](https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view?usp=share_link' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICEcap
 
