@@ -17,9 +17,7 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif](https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view?usp=share_link' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here's a walkthrough of implemented features: https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view?usp=share_link
 
 GIF created with LICEcap
 
