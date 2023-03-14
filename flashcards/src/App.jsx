@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './components/Card';
 import {useState} from "react";
+import QuestionForm from './components/QuestionForm';
 
 const App = () => {
   
@@ -20,7 +21,8 @@ const App = () => {
 
   const [flashcard, setFlashcard] = useState(data[0]);
   const [index, setIndex] = useState(0);
-
+  
+// display next card
   function handleNext(){
     let newIndex = index + 1;
     if(newIndex >= 10){
@@ -30,6 +32,7 @@ const App = () => {
     setFlashcard(data[newIndex]);
   }
 
+// display previous card
   function handlePrev(){
     let newIndex = index - 1;
     if (newIndex <= -1){
@@ -37,7 +40,6 @@ const App = () => {
     }
     setIndex(newIndex);
     setFlashcard(data[newIndex]);
-
   }
 
   return (
@@ -55,12 +57,11 @@ const App = () => {
 
 
       <Card front={flashcard.country} back={flashcard.capital}/>
+      <QuestionForm/>
       <button onClick={handlePrev} className="bttn"> ← </button>
       <button onClick={handleNext} className="bttn"> → </button>
-      
-      
 
-    </div>
+   </div>
   )
 }
 
