@@ -1,43 +1,31 @@
-# Web Development Project 2 - *Flashcards*
+# Web Development Project 3 - *Manya Bondada*
 
-Submitted by: **Manya Bondada**
+Submitted by: **Your Name Here**
 
---THIS IS CURRENTLY IN PROGRESS--
+This web app: **Tests you on your knowledge on countries and their capital**
 
-This web app: **Serves as a quick and easy way to test simple trivia knowledge on countries and their capitals**
-
-Time spent: **6** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [X] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [ ] **A list of card pairs is created**
-- [ ] **Clicking on the card shows the corresponding component of the information pair**
-- [X] **Clicking the next button displays a random new card**
-
-The following **optional** features are implemented:
-
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
-
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features: https://drive.google.com/file/d/1fSyi6V8HjobSnVC3c6O3YFynY-Mmm-Wi/view
+Here's a walkthrough of implemented features:
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICEcap
 
-
 ## Notes
 
-currently working on: 
-- implementing the flip card functionality
-- fixing the dictionary index random number function
- 
+This app uses React states, props, components, user input, and arrays/objects.
 
 ## License
 
