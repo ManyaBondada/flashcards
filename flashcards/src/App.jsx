@@ -6,16 +6,16 @@ import QuestionForm from './components/QuestionForm';
 const App = () => {
   
   const data = [
-    { country: 'Kenya', capital: 'Nairobi'},
-    { country: 'Japan', capital: 'Tokyo'},
-    { country: 'Sweden', capital: 'Stockholm'},
-    { country: 'Syria', capital: 'Damascus'},
-    { country: 'Nepal', capital: 'Kathmandu'},
-    { country: 'Jamaica', capital: 'Kingston'},
-    { country: 'Honduras', capital: 'Tegucigalpa'},
-    { country: 'Indonesia', capital: 'Jakarta'},
-    { country: 'Bulgaria', capital: 'Sofia'},
-    { country: 'Croatia', capital: 'Zagreb'},
+    { country: 'What is the capital of Kenya', capital: 'Nairobi'},
+    { country: 'What is the capital of Japan', capital: 'Tokyo'},
+    { country: 'What is the capital of Sweden', capital: 'Stockholm'},
+    { country: 'What is the capital of Syria', capital: 'Damascus'},
+    { country: 'What is the capital of Nepal', capital: 'Kathmandu'},
+    { country: 'What is the capital of Jamaica', capital: 'Kingston'},
+    { country: 'What is the capital of Honduras', capital: 'Tegucigalpa'},
+    { country: 'What is the capital of Indonesia', capital: 'Jakarta'},
+    { country: 'What is the capital of Bulgaria', capital: 'Sofia'},
+    { country: 'What is the capital of Croatia', capital: 'Zagreb'},
   ]
 
 
@@ -57,7 +57,7 @@ const App = () => {
 
 
       <Card front={flashcard.country} back={flashcard.capital}/>
-      <QuestionForm/>
+      <QuestionForm answer={flashcard.capital}/>
       <button onClick={handlePrev} className="bttn"> ← </button>
       <button onClick={handleNext} className="bttn"> → </button>
 
